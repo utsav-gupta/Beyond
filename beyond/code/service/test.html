@@ -1,0 +1,165 @@
+<html>
+	<head></head>
+	<body>
+
+		<h1>MENU</h1>
+		<h3>Update Menu</h3> Tested
+		<form action="http://127.0.0.1:3000/menus/update" method="post">
+			{"menuId":"1318776059839120421","menuName":"Test12345","parentId":"001","menuType":"Test1234","displayStatus":"false"}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List Menu</h3> Tested 
+		<form action="http://127.0.0.1:3000/menus/list" method="post">
+			{}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List Menu Details</h3> No rows returned
+		<form action="http://127.0.0.1:3000/menus/list/MenuDetails" method="post">
+			{"menuId":"1318771105367852000"}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+
+		<h1>SUB CATEGORY</h1>
+		<h3>Upadate sub caterogy</h3> Tested
+		<form action="http://127.0.0.1:3000/subcategory/update" method="post">
+			{"menuId":"1318776059839120421","scaId":"1318807360403145767","attributeName":"Testpiya","attributeType":"Testpiya","displayStatus":true}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List sub caterogy Attributes</h3> Tested but need to confirm the arguments
+		<form action="http://127.0.0.1:3000/subcategory/list" method="post">
+			{"menuId":"1318776059839120421"}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List sub caterogy Attributes Details</h3> Error
+		<form action="http://127.0.0.1:3000/subcategory/list/AttributesDetail" method="post">
+			{"menuId":"1318776059839120421"}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+
+		<h1>MENU PROMOTION</h1>
+		<h3>Update Menu</h3>
+		<form action="http://192.168.2.112:3000/menuspromotion/update" method="post">
+			{"menuId":"","promotionId":"","itemId":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List Menu</h3>
+		<form action="http://192.168.2.112:3000/menuspromotion/list" method="post">
+			{"menuId":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+
+		<h1>ITEMS</h1>
+		<h3>Update Items</h3>
+		<form action="http://127.0.0.1:3000/items/update" method="post">
+				<!-- {"menuId": "1318776059839120421","itemId": "TestItem","sku": "TestItem","itemName": "TestItem","title": "TestItem","subtitle": "TestItem","sku": "TestItem","overview": "TestItem","inthebox": "TestItem","shippingDetails": "TestItem","mrp": "TestItem","bePrice": "TestItem","discountRate": "TestItem","beDealDesc": "TestItem","otherDetails": "Test","splDealType": "TestItem","splDealValue": "TestItem","tags": "Test","displayStatus": true,"qty": "TestItem","validityFrom": "TestItem","validityTo": "TestItem","sequence ": "TestItem "} -->
+				{"menuId":"1318776059839120421","itemId":"test","sku":"test","itemName":"test","displayPic":"test","title":"test","subTitle":"test","shortDescription":"test","overview":"test","inTheBox":"test","shippingDetails":"test","mrp":"test","bePrice":"test","discountRate":"test","beDealDescription":"test","otherDetails":"test","specialDealType":"test","specialDealValue":"test","tags":"test","displayStatus":"test","qty":"test","validityFrom":"test","validityTo":"test","sequence":"test","displayStatus":true}
+				<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List Items</h3>
+		<form action="http://192.168.2.112:3000/items/list" method="post">
+			{"menuId":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+
+		<h1>TEMPLATES</h1>
+		<h3>Update Templates</h3>
+		<form action="http://192.168.2.112:3000/menuspromotion/update" method="post">
+			{"menuId":"","templateId":"","templateName":"","displayStatus":true}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+		<h3>List Templates</h3>
+		<form action="http://192.168.2.112:3000/menuspromotion/list" method="post">
+			{"menuId":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>
+
+
+		<h1>USERS</h1>
+		<h3>Register Users</h3>
+		<form action="http://127.0.0.1:3000/users/register" method="post">
+			{"userFirstName":"Guhan","userLastName":"Chellachamy","username":"guhan","password":"guhan1234","mobile":"8454869085","emailId":"guhan@ditscentre.in","telephones":{"mobile":"8454869085","home":"04562239291"},"address":{"block":"c5","apartment":"Hill top society","City":"Thane"}}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>	
+		<h3>Login</h3>
+		<form action="http://127.0.0.1:3000/users/login" method="post">
+			{"username":"guhan","password":"guhan1234"}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>	
+		<h3>User Log Out</h3>
+		<form action="http://127.0.0.1:3000/users/logout" method="post">
+			<br>
+			<input type="text" name="sessionId">17cb28a8419d660aa991d5c5bc105d3e
+			<input type="submit" value="Update">
+		</form>	
+		<h3>Reset Password</h3>
+		<form action="http://127.0.0.1:3000/users/resetPassword" method="post">
+			{"newPassword":"guhan12345"}
+			<br>
+			<input type="text" name="values">
+			<input type="text" name="sessionId">620357d71b0490b146321c94c9f1f923
+			<input type="submit" value="Update">
+		</form>	
+		<h3>Forgot Password</h3>
+		<form action="http://192.168.2.112:3000/users/login" method="post">
+			{"username":"","password":"","aRole":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>	
+		<h3>Update Profile</h3>
+		<form action="http://192.168.2.112:3000/users/login" method="post">
+			{"username":"","password":"","aRole":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>	
+		<h3>List Users Details</h3>
+		<form action="http://127.0.0.1:3000/users/list/userDetails" method="post">
+			<br>
+			<input type="text" name="sessionId">
+			<input type="submit" value="Update">
+		</form>	
+		<h3>List Users Items</h3>
+		<form action="http://192.168.2.112:3000/users/login" method="post">
+			{"username":"","password":"","aRole":""}
+			<br>
+			<input type="text" name="values">
+			<input type="submit" value="Update">
+		</form>	
+
+		Excel Sheet Upload
+		<form action="http://beyondenough.in:3000/insert/excel" method="post" enctype="multipart/form-data">
+			<input type="file" name="dbExcel">
+			<input type="text" name="values"> {"sheetNo":"0"}
+			<input type="submit" value="Upload">
+		</form>	
+	</body>
+</html>
